@@ -12,7 +12,7 @@ const user = {
 
 const element = (
   <h1>
-    Hello, {formatName(user)}!
+    whatssup, {formatName(user)}!
   </h1>
 );
 
