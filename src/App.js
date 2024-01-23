@@ -1,20 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
-
-const user = {
-  firstName: 'Chase',
-  lastName: 'Coles'
-};
-
-const element = (
-  <h1>
-    whatssup, {formatName(user)}!
-  </h1>
-);
+import React from 'react'; // Import React
+import Weather from './Weather.jsx'; // Import the Weather component
+import logo from './logo.svg'; // Import the logo (adjust the path as necessary)
 
 function App() {
   return (
@@ -30,11 +16,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {element}
+          whatssup, Chase Coles!
         </a>
       </header>
-    </div>
+      <Weather /> {/* Correctly using the Weather component */}
+    </div> 
   );
 }
 
-export default App;
+export default App; // Export the App component
