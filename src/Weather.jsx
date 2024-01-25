@@ -5,8 +5,8 @@ function Weather() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const apiKey = '286f7143085b43e989a180013242301'; // Replace with your API key
-    const url = ` http://api.weatherapi.com/v1/current.json`;
+    const apiKey = '286f7143085b43e989a180013242301'; // api key double checked and is correct
+    const url = ` http://api.weatherapi.com/v1/current.json`; //api url double check this is correct?
 
     fetch(url)
       .then(response => {
