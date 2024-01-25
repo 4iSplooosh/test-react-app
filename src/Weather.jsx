@@ -6,12 +6,12 @@ function Weather() {
 
   useEffect(() => {
     const apiKey = '286f7143085b43e989a180013242301'; // api key double checked and is correct
-    const url = ` http://api.weatherapi.com/v1/current.json`; //api url double check this is correct?
+    const url =  `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=24201`; //api url double check this is correct?
 
     fetch(url)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('zee slurpee machine she is brroke!');
         }
         return response.json();
       })
