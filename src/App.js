@@ -1,6 +1,22 @@
 import React from 'react'; // Import React
 import Weather from './Weather.jsx'; // Import the Weather component
 import logo from './logo.svg'; // Import the logo (adjust the path as necessary)
+import './App.css';
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Chase',
+  lastName: 'Coles'
+};
+
+const element = (
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+);
 
 function App() {
   return (
