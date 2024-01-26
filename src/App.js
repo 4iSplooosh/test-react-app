@@ -35,7 +35,16 @@ function App() {
           whatssup, Chase Coles!
         </a>
       </header>
-      <Weather /> {/* Correctly using the Weather component */}
+      <body>
+        <div style={{ border: '2px', borderColor: 'black', margin: '3px'}}>
+          <div style={{ alignContent: 'center'}}>
+            <Weather /> {/* Correctly using the Weather component */}
+          </div>
+        
+        </div>
+        
+      </body>
+      
     </div> 
   );
 }
