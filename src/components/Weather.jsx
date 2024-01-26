@@ -27,13 +27,13 @@ function Weather() {
     return <div>Loading...</div>;
   }
 
-  console.log(`weather: ${JSON.stringify(weather?.current?.temp_f, 3, null)}`)
+  console.log(`weather: ${JSON.stringify(weather?.current?.condition?.text, 3, null)}`)
 
   return (
     <div>
       <h1>Weather in {weather?.location?.name}</h1>
-      <p>Temperature: {weather?.current?.temp_f} °C</p>
-      {/* <p>Weather: {weather?.weather[0]?.main}</p> */}
+      <p>Temperature: {weather.current.temp_f} °C</p>
+      <p>Weather: {weather?.current?.condition?.text}</p>
     </div>
   );
 }
