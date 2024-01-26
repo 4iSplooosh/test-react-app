@@ -1,5 +1,6 @@
 import React from 'react'; // Import React
-import Weather from './Weather.jsx'; // Import the Weather component
+// import Weather from './Weather.jsx'; // Import the Weather component\
+import Weather from './components/Weather.jsx'; // Import the Weather component
 import logo from './logo.svg'; // Import the logo (adjust the path as necessary)
 import './App.css';
 
