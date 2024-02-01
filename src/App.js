@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import DarkModeToggle from './components/DarkModeToggle.jsx';
 
+
 const App = () => {
   // State for dark mode
   const [isDarkMode, setIsDarkMode] = useState(() => {
