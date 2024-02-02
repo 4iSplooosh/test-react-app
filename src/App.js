@@ -48,7 +48,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          whatssup, Max Butthole!
+         Max Butthole!
         </a>
         {/* Font size adjuster buttons */}
         <div>
