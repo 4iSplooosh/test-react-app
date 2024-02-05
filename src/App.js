@@ -4,7 +4,15 @@ import Weather from './components/Weather.jsx';
 import logo from './logo.svg';
 import './App.css';
 import DarkModeToggle from './components/DarkModeToggle.jsx';
+import exampleImage from './components/index.webp';
 
+function MyComponent() {
+  return (
+    <div>
+      <img src={exampleImage} alt="Girl with mushrooms image" />
+    </div>
+  );
+}
 
 const App = () => {
   // State for dark mode
@@ -68,6 +76,9 @@ const App = () => {
       <div style={{ padding: '20px' }}>
         <FAQAccordion />
       </div>
+
+      {/* Include MyComponent here */}
+      <MyComponent />
 
       <DarkModeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     </div>
