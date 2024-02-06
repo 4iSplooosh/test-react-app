@@ -56,7 +56,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Max Butthole!
+         Max Butthole!!!
         </a>
         {/* Font size adjuster buttons */}
         <div>
