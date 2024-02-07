@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import '../App.css';
 
-function Weather() {
+function Weather(isDarkMode) {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    localStorage.setItem('darkMode', isDarkMode);
+  }, [isDarkMode]);
 
   useEffect(() => {
     const apiKey = '286f7143085b43e989a180013242301'; // api key double checked and is correct
@@ -30,7 +36,7 @@ function Weather() {
   console.log(`weather: ${JSON.stringify(weather?.current?.condition?.text, 3, null)}`)
 
   return (
-    <div>
+    <div className="App">
       <h1>Weather in {weather?.location?.name}</h1>
       <p>Temperature: {weather.current.temp_f} °C</p>
       <p>Weather: {weather?.current?.condition?.text}</p>

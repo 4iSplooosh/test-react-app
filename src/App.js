@@ -70,7 +70,7 @@ const App = () => {
       </div>
 
       <div style={{ border: '2px', borderColor: 'black', margin: '3px' }}>
-        <Weather />
+        <Weather isDarkMode={isDarkMode}/>
       </div>
 
       <div style={{ padding: '20px' }}>
